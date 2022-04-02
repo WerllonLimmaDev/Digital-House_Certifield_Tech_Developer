@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+
+    height: 100vh;
+}
+
+h1 {
+    padding: 20px;
+}
+
+.cadastro {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cadastro input {
+    margin-bottom: 20px;
+}
+
+.box-form {
+    height: 60vh;
+    width: 40vw;
+    margin: 0 auto;
+    
+}
+
+
+#submit:hover {
+    border-radius: 20px;
+    background-color: bisque;
+}

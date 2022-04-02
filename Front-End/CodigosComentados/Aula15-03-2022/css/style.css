@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700&family=Roboto&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+
+
+/* Essa é a navbar, tem display flex, e flex-wrap, para que os itens desçam caso não
+tenha mais espaço disponível na tela */
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content space-between para colocar um espaço no meio, entre os itens filhos da nav */
+    justify-content: space-between;
+    background-color: rgb(37, 37, 37);
+}
+
+
+
+/* mudaremos aqui o estilo dos links da navbar */
+.navbar a {
+
+    /*text-decoration: none para tirar o sublinhado padrão  */
+    text-decoration: none;
+    color: white;
+}
+
+
+/* o seletor abaixo é para dar margin para todos (*) os itens da nav */
+.navbar * {
+    margin: 5px;
+}
+
+/* aqui estipulamos o tamanho exato do ícone da nav */
+.navbar img {
+    width: 50px;
+    height: 50px;
+}
+
+/* colocamos flex no icone-titulo para que o icone e o titulo fiquem um do lado do outro */
+
+
+.icone-titulo {
+    display: flex;
+    /* align itens center para que o texto fique centralizado verticalmente com o ícone */
+    align-items: center;
+}
+
+
+
+
+/* itens-nav também recebe flex, pois queremos posicionar seus elementos filhos */
+.itens-nav {
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* essa section também recebe flex, já que as duas caixas da parte principal do código vão ficar um do lado da outra */
+.principal {
+    display: flex;
+   
+}
+
+
+
+/* as alterações a seguir serão feitas tanto para a caixa promoção tanto para a caixa
+cardapio, são regras CSS que ambas as caixas sofrerão */
+.promoçao, .cardapio {
+    /* width: 44vw para que de espaço para caber as duas, uma do lado da outra */
+    width: 44vw;
+    /* height: fit-content para que o conteúdo mande na altura da caixa */
+    height: fit-content;
+    /* atribuimos um mínimo de altura para não ter discrepancia entre as caixas */
+    min-height: 320px;
+    border: solid 1px black;
+    border-radius: 5px;
+    /* aplicamos margin específicas para cada lado */
+    margin: 10vh 2vw 10vh 2vw;
+}
+
+.promoçao {
+    background: url(/img/pizza.jpg);
+    background-size: cover;
+    text-align: center;
+    
+}
+
+.promoçao h2 {
+    color: red;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+
+/* para mudar especificamente a TAG <em> destacado */
+.promoçao h2 em {
+    color: white;
+}
+
+.cardapio {
+    border: 2px solid rgb(255, 196, 0);
+    
+ 
+}
+
+.cardapio h1 {
+    text-align: center;
+}
+
+
+/* como dito, cardapio-flex recebe flex, para que as duas caixas
+fiquem um do lado da outra, e caso nao tenha espaço elas podem 'quebrar'
+já que adicionamos o flex-wrap: wrap */
+.cardapio-flex{
+    display: flex;
+    flex-wrap: wrap;
+  
+}
+
+
+
+/* estipulamos exatamente o tamanho da imagem do cardapio */
+.cardapio-flex img{
+    width: 120px;
+    height: 120px;
+    margin: 10% 10%;
+}
+
+.top-5 {
+    margin: 10% 10%;
+}
+
+
+
+/* footer também é flex e recebe valores de uma flexbox */
+.footer-style {
+    background: rgb(49, 49, 49);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.icone-footer {
+    display: flex;
+    align-items: center;
+}
+
+.icone-footer img {
+    height: 60px;
+    width: 60px;
+}
+
+
+.itens-footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.itens-footer a {
+    text-decoration: none;
+    color: white;
+
+
+
+}
+
+
+/* Essa media queria faz com que quando a tela fique pequena, o flex-direction da flex
+virará column, ai utilizamos o align-items para alinhar os itens no meio */
+@media  (max-width: 550px) {
+    .principal  {
+        flex-direction: column;
+        align-items: center;
+        
+       
+    }
+
+    /* atribuimos uma width para .cardapio e .promoção que são as duas caixas principais da página para que elas ocupem um espaço maior
+    nesse tamanho de tela, para melhorar a visualização em tablets */
+    .cardapio, .promoçao {
+        width: 90vw;
+    }
+
+
+
+}
+
+
+
+@media (max-width: 349px) {
+
+    /* justify-contet: center no .footer-style para que os links do footer
+    fiquem centralizados com o ícone e título */
+
+ .footer-style {
+     justify-content: center;
+ }
+
+ .itens-nav {
+     margin: 0;
+ }
+   
+
+}
+

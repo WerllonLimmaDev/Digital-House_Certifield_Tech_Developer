@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula dia 15/03</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+
+        <!-- começo da navbar, essa tag receberá display flex, já que é o contaienr
+        pai -->
+        <nav class="navbar">
+
+            <!-- a div abaixo envolvera tanto o título da navbar com o seu ícone, 
+            ja que ambos precisam ficar um do lado do outro  -->
+
+            <div class="icone-titulo">
+                <img src="/img/pizzaicon.png" alt="">
+                <h1>Pizza&Front</h1>
+            </div>
+
+            <!-- a div abaixo envolverá os links da navbar -->
+
+            <div class="itens-nav">
+                <a href="index.html">Home</a>
+                <a href="">Ranking</a>
+                <a href="">Promoção</a>
+                <a href="">Contato</a>
+            </div>
+
+        </nav>
+
+        <!-- fim da navbar -->
+    </header>
+
+
+    <main>
+
+        <!-- começo da seção principal do site, a section com classe principal
+        receberá display flex -->
+
+        <section class="principal">
+
+                <div class="promoçao">
+                    <h2>Envio grátis <em>comprando</em> duas pizzas</h2>
+
+                </div>
+
+                <!-- A div abaixo é a parte do cardapio, ela fecha antes do fechamento da section principal  -->
+
+                <div class="cardapio">
+                    <h1>Cardápio de pizzas</h1>
+                
+
+
+
+
+                <!-- a div abaixo receberá display flex, já que queremos mudar o espaçamento dos itens que são seus filhos -->
+
+                <div class="cardapio-flex">
+                    <div class="top-5">
+                        <h2>TOP 5</h2>
+                        <ol>
+                            <li>Frango e catupiry</li>
+                            <li>Havaiana</li>
+                            <li>Bolonhesa</li>
+                            <li>Vegana</li>
+                            <li>Calabaresa</li>
+
+                        </ol>
+                    </div>
+
+
+
+                    <img src="/img/kisspng-pizza-quattro-stagioni-clip-art-vector-graphics-pe-5bea9da8c0c241.6321382215421024407896.png"
+                        alt="">
+
+                </div>
+                </div>
+
+        </section>
+
+
+
+    </main>
+
+
+    <footer>
+
+        <!-- separamos itens-footer e icone footer para que fique um do lado do outro
+        ambos são filhos de um mesmo container flex, mas, isso não impede que eles também
+    sejam containers flex, que é exatamente o caso -->
+
+        <section class="footer-style">
+            <div class="itens-footer">
+                <a href="index.html">Home</a>
+                <a href="">Ranking</a>
+                <a href="">Promoção</a>
+                <a href="">Contato</a>
+            </div>
+
+            <div class="icone-footer">
+                <img src="/img/pizzaicon.png" alt="">
+                <h1>Pizza&Front</h1>
+            </div>
+
+        </section>
+
+    </footer>
+
+
+</body>
+
+</html>

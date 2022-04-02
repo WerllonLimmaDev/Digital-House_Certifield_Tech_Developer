@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* gradiente no body e a altura de 100% do viewport coloando 100vh */
+body {
+    background: linear-gradient(135deg, rgba(20, 18, 163, 0.835), rgba(134, 15, 124, 0.931));
+    height: 100vh;
+}
+
+/* propriedades de flexbox dentro do main */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+/* utilizei o glassmorphism para estilizar a caixa do furmulário
+por isso que tem box-shadow, backdrop-filter e outras propriedades especificas
+para utilizar o glassmorphism  */
+
+/* site gerador de glassmorphism: https://hype4.academy/tools/glassmorphism-generator */
+.principal {
+    width: 50vw;
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 8px );
+    -webkit-backdrop-filter: blur( 8px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+/* input-group recepe position: relative para que os labels possam 'entrar' dentro do input  */
+.input-group {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    /* outiline: 0 para tirar o sublinhado padrão das caixas de texto e input */
+    outline: 0;
+    border: 1px solid #fff;
+    background: transparent;
+    font-size: 1.1rem;
+}
+
+
+/* o label em específico recebe position: absolute, já que ele vai entrar dentro do input para 
+que possamos realizar a animação */
+label {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    cursor: text;
+    /* transition: 0.2s para que o transform que será colocado no label aconteça de uma forma mais
+    suave */
+    transition: 0.2s;
+
+}
+
+button {
+    padding: 10px 0;
+    color: #fff;
+    outline: none;
+    background: transparent;
+    border: 1px solid #fff;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+/* esses dois seletores abaixo são justamente a animação que vai acontecer no label
+quando colocarmos o mouse em cima ela receberá um valor  */
+
+input:focus~label,
+input:valid~label {
+    top: -35px;
+    font-size: 14px;
+
+
+}
+
+
+/* Botão de toggle */
+
+/* Switch, a caixa que envolve o circulo principal*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 24px;
+  }
+  
+  /*Escondendo a checkbox padrão do HTML */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(36px);
+    -ms-transform: translateX(36px);
+    transform: translateX(36px);
+  }
+  
+  /* Slider circular */
+  .slider.round {
+    border-radius:34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }

@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700&family=Red+Hat+Mono:wght@300&family=Roboto&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Mono', monospace;
+}
+
+body {
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    height: 100%;
+}
+
+
+/* Alterações diretas no estilo dos inputs */
+
+input {
+    padding: 6px;
+    border-radius: 10px;
+    border: none;
+}
+
+
+/* Esse é o principal container de flex, é por meio desse container pai que faremos alterações de
+posicionamento, recomendo mudar os valores para ver os diferentes resultados. */
+
+.cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+}
+
+
+/* O box-form é a section principal do formulário, ela envolve todos os itens do formulário
+height: fit-content para que a altura da seção seja adaptável ao conteúdo que tem dentro.
+margin: 0 auto, para que o bloco do formulário fique no meio */
+
+
+.box-form {
+    height: fit-content;
+    width: 40vw;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: rgb(199, 227, 251);
+    border-radius: 20px;
+    padding: 20px;
+
+}
+
+
+/* Aumento do tamanho do botão de envio ao aumentar seu padding e tirar a borda
+automatica formada com border: none, e border-radius para adicionar arredondamento */
+
+#submit {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+/* efeito de hover no botão de envio do formulario */
+
+#submit:hover {
+    border-radius: 10px;
+    background-color: rgb(186, 190, 248);
+
+}
+
+
+
+/* o primeiro <b> que pertence a .chid vai sofrer a alteração, mas somente o primeiro */
+
+
+.child b:nth-child(1){
+    color: #9b59b6;
+}
+
+/* Espaçamento entre inputs com margin em baixo */
+
+.cadastro input {
+    margin-bottom: 10px;
+
+}
+
+#submit:hover {
+    transform: scale(1.25,1.25);
+    transition: 0.5s;
+   
+
+}
+
+
+
+
+/* keyframe da pokebolla mexendo, cada valor em porcentagem representa
+um ponto da animação  */
+
+@keyframes pokebolla {
+    0% {
+        /* o transform: rotate() permite a rotação do elemento em questão */
+        transform: rotate(-20deg) translate(-20px);
+        
+
+    }
+
+    50% {
+        transform: rotate(20deg) translate(20px);
+
+    }
+
+    75% {
+        transform: rotate(-20deg) translate(-20px);
+
+    }
+
+    100% {
+        transform: rotate(0) translate(0);
+
+        
+    }
+
+}
+
+
+
+/* A propriedade animation é colocada no .pokebolla:hover, para que 
+quando passarmos o cursor em cima da pokebolla a animação criada no @keyframe acima
+será executada */
+.pokebolla:hover{
+    animation: pokebolla 2s infinite;
+    
+}
+
+.circulo-pokebolla:hover {
+    display: initial;
+}
+
+/* A media querie a seguir muda o comportamento dos itens
+para que eles mudem conforme a tela diminui, nesse caso as alterações
+são alterando o .box-form para ter uma width maior, assim os itens ficam mais inclusos
+na tela de mobile  */
+
+@media (max-width: 550px) {
+
+    .box-form {
+        width: 70vw;
+    }
+}

@@ -1,0 +1,307 @@
+/*
+desktop: 1200px; 
+notebook: 992px;
+tablet: 768px;
+celular: 480px; 
+ */
+
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans Narrow', monospace;
+}
+
+body {
+    background-image: url(https://forums.comunidades.riotgames.com/t5/image/serverpage/image-id/491iABE04DD27CE89CE1?v=v2);
+    background-size: 100% 100%;
+    background-repeat: contain;
+
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content space-between para colocar um espaço no meio, entre os itens filhos da nav */
+    justify-content: space-between;
+    background-color: rgb(37, 37, 37);
+}
+
+
+
+/* mudaremos aqui o estilo dos links da navbar */
+.navbar a {
+
+    /*text-decoration: none para tirar o sublinhado padrão  */
+    text-decoration: none;
+    color: white;
+}
+
+
+/* o seletor abaixo é para dar margin para todos (*) os itens da nav */
+.navbar * {
+    margin: 5px;
+}
+
+/* aqui estipulamos o tamanho exato do ícone da nav */
+.navbar img {
+    width: 50px;
+    height: 50px;
+
+}
+
+/* colocamos flex no icone-titulo para que o icone e o titulo fiquem um do lado do outro */
+
+
+.icone-titulo {
+    display: flex;
+    /* align itens center para que o texto fique centralizado verticalmente com o ícone */
+    align-items: center;
+}
+
+
+
+
+/* itens-nav também recebe flex, pois queremos posicionar seus elementos filhos */
+.itens-nav {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.principal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+
+}
+
+.counter-pick, .adv-pick {
+
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.campeao-destaque {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.icone-destaque {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+
+.bloco-counter-campeao, .bloco-adv-campeao {
+    display: flex;
+    align-items: center;
+    width: 36vw;
+    height: 65px;
+    outline: 0;
+    border: 1px transparent;
+    border-radius: 50px;
+    background-color: white;
+    margin: 20px 0 20px 0;
+}
+
+.zed-imagem {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 10%;
+
+
+}
+
+.barra-zed {
+    height: 10px;
+    width: 22vw;
+    background-color: red;
+    outline: 0;
+    border: 1px transparent;
+    border-radius: 50px;
+    margin-left: 20px;
+}
+
+.yasuo-imagem {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 10%;
+
+}
+
+.barra-yasuo {
+    height: 10px;
+    width: 18vw;
+    background-color: rgb(236, 156, 8);
+    outline: 0;
+    border: 1px transparent;
+    border-radius: 50px;
+    margin-left: 20px;
+
+}
+
+.leblanc-imagem {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 10%;
+
+}
+
+.barra-leblanc {
+
+    height: 10px;
+    width: 24vw;
+    background-color: rgb(111, 246, 0);
+    outline: 0;
+    border: 1px transparent;
+    border-radius: 50px;
+    margin-left: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+.footer-style {
+    background: rgb(49, 49, 49);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.icone-footer {
+    display: flex;
+    align-items: center;
+}
+
+.icone-footer img {
+    height: 60px;
+    width: 60px;
+}
+
+
+.itens-footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.itens-footer a {
+    text-decoration: none;
+    color: white;
+
+
+
+}
+
+@media (max-width:592px) {
+    .principal {
+        flex-direction: column;
+
+    }
+
+
+    .bloco-counter-campeao, .bloco-adv-campeao {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+
+    .barra-zed {
+        width: 58vw;
+    }
+
+    .barra-yasuo {
+        width: 48vw;
+    }
+
+    .barra-leblanc {
+        width: 58vw;
+    }
+
+}
+
+
+
+
+@media (max-width: 480px) {
+
+    .bloco-counter-campeao, .bloco-adv-campeao {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+
+    .barra-zed {
+        width: 48vw;
+    }
+
+    .barra-yasuo {
+        width: 38vw;
+    }
+
+    .barra-leblanc {
+        width: 48vw;
+    }
+
+
+
+
+    .footer-style {
+        justify-content: center;
+    }
+
+    .itens-nav {
+        margin: 0;
+    }
+
+
+}
+
+
+@media (max-width: 292px) {
+    .barra-zed {
+        width: 38vw;
+    }
+
+    .barra-yasuo {
+        width: 28vw;
+    }
+
+    .barra-leblanc {
+        width: 38vw;
+    }
+
+}

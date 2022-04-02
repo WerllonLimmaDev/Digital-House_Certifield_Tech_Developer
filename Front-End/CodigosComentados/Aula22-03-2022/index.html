@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 22-03-20222</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main>
+        <div class="principal">
+            <form action="">
+
+                <!-- juntamos o input com seu label utilizando a div com classe input-group, assim podemos
+                mexer com ambos os itens em um só seletor -->
+                <div class="input-group">
+                    <input type="text" id="name" required>
+                    <label for="name">Seu nome</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="numero" required>
+                    <label for="numero">Telefone</label>
+
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" required>
+                    <label for="email">Seu email</label>
+
+                </div>
+                <div class="input-group">
+                    <textarea id="mensagem" rows="8"></textarea>
+                    <label for="mensagem">Seu nome</label>
+
+                </div>
+
+              <!-- Aqui começa o botão toggle -->
+                  
+                  <label class="switch">
+                      <!--  tem um input de check box, já que o toggle funciona como uma flexbox -->
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                  </label>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </main>
+
+</body>
+
+</html>

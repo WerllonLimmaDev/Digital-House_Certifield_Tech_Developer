@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
+
+
+
+/* Atribuição da flex no container principal */
+
+.flex-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    /* gap para dar espaçamento entre os itens da flex */
+    gap: 40px;
+}
+
+
+/* seção 1 e 2 também recebem display flex para que os itens fiquem um do lado do outro e
+conseguimos dar um espaçamento neles */
+
+.seçao1, .seçao2 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+
+    /* A propriedade flex-shrink permite que os itens da flexbox 'quebrem' caso não tenha mais
+    espaço para eles no container, então assim eles podem descer */
+    flex-shrink: 1;
+    
+}
+
+.item1 {
+    text-align: center;
+}
+
+
+
+
+
+@media (max-width: 468px) {
+
+    /* Nessa media querie, colocamos que a seção 1 e 2 será display block, perderá então a propriedade
+    de flex e assim os itens poderão ficar em baixo */
+
+    .seçao1, .seçao2{
+        display: block ;
+       
+        
+    }
+
+    .item1 {
+        /* Quando colocamos que os itens terão display inline-block, quer dizer que eles terão comportamento de
+        inline caso tenha espaço para mais de um item, caso não tenha espaço ele descerá para baixo */
+        display: inline-block;
+
+        /* width de 40% justamente para ter espaço de der mais de um item em uma linha */
+        width: 40%;
+        margin-left: 5vw;
+        
+    }
+}
+
+
+
+
+@media (max-width: 358px) {
+
+    /* Nesse ultimo media querie, para um tamanho de tela bem pequeno, a largura dos itens será de 100%
+    ou seja, ocupara toda a largura da página, fazendo com que apareça um item por linha */
+    .item1 {
+        width: 100%;
+    }
+
+
+
+}

@@ -1,0 +1,81 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BARRA DE NAVEGAÇÃO */
+
+.barra-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo-header {
+    padding: 10px;
+    margin-left: 40px;
+    
+}
+
+.nav-bar {
+    width: 25%;
+    margin-right: 100px;
+}
+
+.ul-nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.ul-nav li {
+    padding: 10px;
+    list-style: none;
+    flex: 1;
+    text-align: center;
+}
+
+/* CONTEÚDO PRINCIPAL */
+
+.conteudo {
+    width: 100vw;
+    height: 100vh;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #171717;
+    color: white;
+    padding: 20px;
+}
+
+.integrantes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+   
+}
+
+.aluno {
+    width: 25%;
+    padding: 15px;
+
+}
+
+.aluno h4 {
+    padding: 5px;
+}
+
+.aluno .github, .linkedin {
+    padding: 10px;
+}
+
+.agradecimentos {
+    text-align: center;
+    margin-bottom: 10px;
+}

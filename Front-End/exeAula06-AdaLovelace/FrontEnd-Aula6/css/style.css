@@ -1,0 +1,13 @@
+h1 {
+    color: blue;
+}
+
+.TituloPrincipal {
+    text-align: center;
+}
+
+.TituloPrimario {
+    color: red;
+    background-color: linear-gradient(right rgba(255,32 43, 0.70));
+
+}

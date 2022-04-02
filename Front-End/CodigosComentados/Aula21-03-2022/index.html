@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 21-03-2022</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <main>
+
+        <!-- seção principal do form, utilzaremos o seletor da classe box-form para fazer alterações gerais de espaçamento do bloco 
+        todo e para estilizar o fundo do forumlário, nesse não utilizamos display flex, não há necessidade -->
+
+        <section class="box-form">
+            <h1>Registre-se</h1>
+            <br>
+
+            <!-- div main-form, esse é a div que podemos utilizar para mudar o bloco do formulário dentro da sua seção box-form, podemos
+            mudar o espaçamento dos itens dentro da sua caixa, nesse código não utilizamos essa classe, mas pode ser utilizada -->
+
+            <div class="main-form">
+
+
+                <!-- Agora é a caixa principal do cadastro, a TAG form é obrigatória quando fazemos formulários, nela sim é atribuida
+                o display: flex já que seus itens filhos sofreram com a mudança de posição, e é justamente o que queremos. -->
+
+                <form action="" class="cadastro">
+
+                    <label for="nome">Nome</label> 
+                    <input type="text" id="nome" name="nome">
+                    
+                    
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" id="sobrenome" name="sobrenome" required>
+                  
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha aqui">
+                 
+                    <label for="senha2">Confirme sua senha</label>
+                    <input type="password" id="senha2" name="senha2" placeholder="Digite sua senha aqui">
+
+                    <label for="idade">Data de nascimento</label>
+                    <input type="date" id="idade" name="idade">
+
+
+
+                    <!-- Div que envolve os termos para que o check box apareça do lado do texto -->
+
+                    <div>
+                    <label for="termos">Você aceita os termos e condições?</label>
+                    <input type="checkbox" id="termos" name="termos" >
+                    </div> 
+
+                    <input type="submit" value="submit" id="submit">
+
+                    
+
+
+                   
+                </form>
+
+
+                <p class="child">
+                    <b>Lorem ipsum</b> dolor <b>sit amet</b> <b>sit amet</b> <b>sit amet</b>  consectetur adipisicing elit. Dolore reprehenderit nam delectus ipsam! Ratione, quos consequatur nostrum aut suscipit fuga mollitia quas libero. Corrupti facilis magni voluptas fugiat veniam commodi?
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <section>
+            <div>
+                <img src="/img/Poké_Ball_icon.svg.png" alt="" style="height:  100px; width: 100px;" class="pokebolla">
+            </div>
+        </section>
+
+    </main>
+
+
+
+
+    
+</body>
+</html>

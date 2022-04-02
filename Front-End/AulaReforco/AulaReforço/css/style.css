@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    width: 660px;
+    margin: 0 auto 0 auto ;
+    gap: 10px;
+  
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    padding: 20px;
+    height: fit-content;
+    background-color: black;
+    border-radius: 20px;
+    /* No background-image, o url começa com uma barra */
+    background-image: url(/img/camille.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+
+   
+   
+}
+
+.card .imageinterna {
+    width: 60px;
+    height: 60px;
+    margin-top: 11vh;
+    border-radius: 50%;
+    border: solid 3px black;
+    background-image: url(/img/qiyana.png);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.fundo-texto {
+    padding: 20px;
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(245, 245, 220, 0.329);
+    border-radius: 20px;
+}
+
+textarea {
+    padding: 10px;
+    max-width: 100%;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+}

@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body{ 
+    color: white;
+    background-image: url('https://i.postimg.cc/PrhmLLLG/rio-de-janeiro-500-pecas-high-quality-collection-l7vr8e-P.jpg');
+    /*background-position: center top;*/
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+#cabecalho{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    margin-top: 1%;
+}
+
+
+
+header {
+    display: flex;
+    height: 213px; 
+    width: 90vw;
+    background: rgba(204, 204, 253, 0.4);
+    box-shadow: 0 8px 32px 0 rgba(4, 16, 172, 0.37);
+    backdrop-filter: blur( 12px );
+    -webkit-backdrop-filter: blur( 12px );
+    border-radius: 10px;
+    border: 1px solid rgba(3, 17, 212, 0.062);
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Nunito', sans-serif; 
+    font-size: 40px;
+    color: rgb(2, 2, 119);
+    flex-wrap: wrap;
+} 
+
+#logo {
+    display: flex; 
+    align-items: center;
+    padding: 3%;
+}  
+
+#logo img {
+    height: 100px; 
+    width: 100px; 
+}
+
+
+
+#nav-ul {
+    width: 40vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+} 
+
+.menu {
+    margin: 2px;
+    box-sizing: border-box;
+    border-radius: 35px;
+    border-radius: 20px; 
+    font-size: 25px; 
+    padding: 10px;
+}
+.menu:hover {
+    border: 2px solid rgba(243, 236, 252, 0.979);
+}
+
+header li { 
+    display: flex;
+    list-style-type: none;
+    padding: 2px;
+} 
+
+#div-main{
+    width: 100%;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center; 
+    margin-top: 1%;
+}
+
+#banner {
+    display: flex;
+    height: 780px;
+    width: 70vw;
+    margin-top: 20vh;
+    background-image: url('https://i.postimg.cc/FH0z0pwD/RIO-Night.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 30px; 
+    box-shadow: 0 8px 32px 0 rgb(180, 180, 180); 
+    transition: .5s ease-in-out;
+    color: #ffffff; 
+    padding: 1%;
+} 
+
+#banner:hover {
+    transform: scale(1.02);
+    filter: brightness(110%);
+}
+
+#txt-banner { 
+    display: flex; 
+    height: 60%;
+    width: 80%;  
+    padding: 1%;
+    background: rgba( 166, 159, 159, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 ); 
+    font-family: 'Roboto', sans-serif;
+    font-size: medium; 
+    text-align: center;
+    line-height: 40px;
+    justify-content: center;
+    flex-direction: column;
+} 
+#txt-banner a {
+    color:rgb(85, 185, 252);
+}
+#txt-banner p {
+    text-size-adjust: 10px;
+}
+
+main {
+    /*justify-content: center;*/
+    width: 100%;
+
+}
+#main-h2 {
+    height: 20vh;
+    margin: 0 auto;
+    margin-top: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    display: flex;
+    height: 80px;
+    width: 70vw;
+    background-size: cover;
+    background: rgba(253, 253, 253, 0.527);
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 20px; 
+    box-shadow: 0 8px 32px 0 rgba(218, 216, 216, 0.849); 
+    transition: .5s ease-in-out;
+    color: rgb(2, 2, 119); 
+    padding: 1%;
+}
+
+#cx-pai-curiosidades {
+    display: flex;
+    flex-direction: row; 
+    height: 75vh;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 5vh;
+    margin-bottom: 20px;
+    gap: 50px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; 
+    
+}
+
+.cx-filho-curiosidades { 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 90%;
+    width: 300px; 
+    background: rgba(183, 183, 184, 0.4);
+    box-shadow: 0 8px 32px 0 rgba(206, 206, 207, 0.39);
+    backdrop-filter: blur( 12px );
+    -webkit-backdrop-filter: blur( 12px );
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.212);
+    transition: .5s ease-in-out; 
+    font-family: 'Roboto', sans-serif; 
+    
+} 
+
+.cx-filho-curiosidades:hover {
+
+    transform: scale(1.02);
+    filter: brightness(115%);
+
+}
+
+.cx-filho-curiosidades h2 { 
+    text-align: center;
+}
+
+.cx-filho-curiosidades img {
+    height: 45%;
+    width: 95%;
+    border-radius: 15px;
+    border: 2px solid rgb(69, 33, 168);
+}
+.cx-filho-curiosidades a {
+    color: #0000EE;
+}
+
+article {
+    padding: 5%; 
+    text-align: center
+} 
+
+#img-historia {
+    margin-top: 10px;
+} 
+
+.cx-filho-curiosidades #som {
+    height: 45%;
+    width: 95%;
+    border-radius: 15px;
+    border: 2px solid black;
+} 
+
+#youtube { 
+    display: flex;
+    width: auto;
+    height: 700px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column; 
+} 
+
+#youtube iframe {
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    transition: .5s ease-in-out; 
+} 
+
+#youtube iframe:hover {
+    transform: scale(1.02);
+    filter: brightness(120%);
+} 
+
+#div-footer {
+    display: flex; 
+    width: 100%;
+    justify-content: center; 
+    height: 213px; 
+    margin-bottom: 1%;
+}
+
+footer {
+    display: flex;
+    height: 213px; 
+    width: 90vw; 
+    margin-top: 10vh;
+    background: rgba(204, 204, 253, 0.4);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 12px );
+    -webkit-backdrop-filter: blur( 12px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    
+} 
+
+a img {
+    height: 10vh;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+#div-footer p {
+    flex-direction: column;
+    position: fixed;
+    bottom: 20px;
+}
+
+
+
+@media (max-width:1000px) {
+    header{
+        width: 100%;
+        height: auto;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    } 
+    #div-header{
+        display: flex;
+    }
+    #banner {
+        height: auto;
+    }
+    nav {
+        display: flex;
+
+    }
+    #cx-pai-curiosidades{
+        margin-bottom: 0;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    #main-h2 {
+        
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+} 

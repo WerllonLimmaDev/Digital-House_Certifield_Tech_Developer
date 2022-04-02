@@ -1,0 +1,77 @@
+/*Esse é o resetador de CSS no navegador*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.BarDiscount {
+    font-size: 14px;
+    background-color: rgba(28, 209, 176, 1);
+    font-family: 'Roboto', sans-serif;
+    padding: 5px;
+    width: 100%;
+}
+
+.header {
+    background-color: rgba(0, 102, 159, 1);
+    position: absolute;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: left;
+    padding: 20px;
+}
+
+
+
+.card *{
+    max-width: 400px;
+    text-align: center;
+}
+
+.card {
+    position: absolute;
+    width: 374px;
+    height: 217.81px;
+    left: 112px;
+    top: 225.11px;
+    background: url(/img/849bfede3a5193c34ab8a00379e64fa2\ 1-1.png);
+    border-radius: 16px 16px 0px 0px;
+}
+.Batman {
+    position: absolute;
+    width: 400px;
+    height: 250px;
+        background: url(/img/Group\ 22.png);
+    background-repeat: no-repeat;
+}
+
+.Batman {
+    position: relative;
+    width: 500px;
+    top: 350px;
+    left: 220px;
+}
+
+.Batman h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    position: relative;
+    top: 180px;
+    left: 20px;
+    color: black;
+}
+
+.secao {
+    display: block;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+}
