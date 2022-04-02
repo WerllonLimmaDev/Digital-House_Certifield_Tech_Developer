@@ -1,0 +1,32 @@
+*Comandos mais usados até o momento:*
+
+$ git init ➡ Para criar um repositório local.
+
+$ touch nomeDoArquivo.tipoDoArquivo ➡ Para criar um arquivo no formato que definiu.
+
+$ nano nomeDoArquivo.tipoDoArquivo ➡ Para criar um arquivo no formato que de e já adicionando informações diretamente dentro do arquivo ou Editar um arquivo já criado chamando esse comando. 
+
+$ git add nomeDoArquivo.tipoDoArquivo ➡ Para adicionar um arquivo para na área de ser commitado. 
+
+$ git add . ➡ Para adicionar todos os arquivos da mesma pasta na área de ser commitado.
+
+$ git commit -m " " ➡ Para commitar um arquivo adicionado( vindo do comando 'git add .).
+
+$ git push origin master ou(o nomeDaBranch mostrada conforme aparece no terminal) ➡ Para empurrar/enviar todos os arquivos commitados.
+
+$ git status ➡ Para verificar se as ordens de comandos que foram dadas no git e o estado atual do que solcicitou através do terminal estão tudo ok.
+
+$ git clone linkDaUrlQueSeráClonada ➡ Adicionando esse comando + a url do arquivo ou repositório localizado no GitHub irá baixar/criar um repositório local com o mesmo nome e dados contidos no repositório remoto.
+
+*Comandos para criar um repositório local:*
+
+$ git config user.name "nomeDeUsuário" ➡ Para informar o nome de usuário do perfil já criado no GitHub.
+
+$ git config user.email "emailDeUsuario ➡ Para informar o email de usuário do perfil já criado no GitHUb.
+
+$ git remote add origin linkDaUrlQueSeráAdicionada ➡ Esse comando é para vincular ao repositório remoto.
+
+$ git pull origin main ou(o nome da branch conforme aparece no terminal) ➡ Esse comando é para atualizar os arquivos do repositório local com as modificações feitas no repositório remoto.
+
+
+*Professor desculpas por não ter colocado todos aprendidos até aqui. Coloquei apenas o que consegui lembrar para testar meus conhecimentos rsrs. (No exercício pede alguns...)

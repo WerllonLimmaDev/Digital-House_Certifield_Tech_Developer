@@ -1,0 +1,229 @@
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/Desktop/CTD
+$ cd ../
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/Desktop
+$ cd CTD
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/Desktop/CTD
+$ pwd
+/c/Users/nando/Desktop/CTD
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/Desktop/CTD
+$ mkdir Teste
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/Desktop/CTD
+$ cd Teste
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/Desktop/CTD/Teste
+$ touch segundo.txt
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/Desktop/CTD/Teste
+$ nano terceiro.txt
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/Desktop/CTD/Teste
+$ nano segundo.txt
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/Desktop/CTD/Teste
+$ nano segundo.txt
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/Desktop/CTD/Teste
+$ mkdir apagar
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/Desktop/CTD
+$ mv segundo.txt ../
+mv: cannot stat 'segundo.txt': No such file or directory
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/Desktop/CTD
+$ cd teste
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/Desktop/CTD/teste
+$ mv segundo.txt ../
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/Desktop/CTD/teste
+$ cd ../
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/Desktop/CTD
+$ mv segundo teste/
+mv: cannot stat 'segundo': No such file or directory
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/Desktop/CTD
+$ mv segundo.txt/
+
+
+nando@DESKTOP-O0L3RQR MINGW64 /c/Users
+$ mkdir teste
+mkdir: cannot create directory ‘teste’: Permission denied
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/desktop/CTD
+$ mkdir raiz
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/desktop/CTD
+$ cd raiz
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/desktop/CTD/raiz
+$ mkdir pasta1
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/desktop/CTD/raiz
+$ mkdir pasta2
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/desktop/CTD/raiz
+$ mkdir pasta3
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/desktop/CTD/raiz
+$ cd pasta1
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/desktop/CTD/raiz/pasta1
+$ touch arquivo1
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/desktop/CTD/raiz/pasta1
+$ touch arquivo1.txt
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/desktop/CTD/raiz/pasta1
+$ touch arquivo2.txt
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/desktop/CTD/raiz/pasta1
+$ touch arquivo3.txt
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/desktop/CTD/raiz/pasta1
+$ rm aquivo1 
+rm: cannot remove 'aquivo1': No such file or directory
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/desktop/CTD/raiz/pasta1
+$ rm arquivo1
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/desktop/CTD/raiz/pasta1
+$ rm arquivo3
+rm: cannot remove 'arquivo3': No such file or directory
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/desktop/CTD/raiz/pasta1
+$ rm arquivo3.txt
+rm: cannot remove 'arquivo3.txt': Permission denied
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/desktop/CTD/raiz/pasta1
+$ rm arquivo3.txt
+rm: cannot remove 'arquivo3.txt': Permission denied
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/desktop/CTD/raiz/pasta1
+$ rm arquivo3.txt
+rm: cannot remove 'arquivo3.txt': Permission denied
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/desktop/CTD/raiz/pasta1
+$ mv arquivo2.txt pasta2/
+mv: cannot move 'arquivo2.txt' to 'pasta2/': No such file or directory
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/desktop/CTD/raiz/pasta1
+$ mv arquivo2.txt ../
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/desktop/CTD/raiz/pasta1
+$ ../
+bash: ../: Is a directory
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/desktop/CTD/raiz/pasta1
+$ cd ../
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/desktop/CTD/raiz
+$ mv arquivo2.txt pasta2/
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/desktop/CTD/raiz
+$ ls -la
+total 4
+drwxr-xr-x 1 nando 197610 0 fev  8 12:01 ./
+drwxr-xr-x 1 nando 197610 0 fev  8 11:55 ../
+drwxr-xr-x 1 nando 197610 0 fev  8 12:00 pasta1/
+drwxr-xr-x 1 nando 197610 0 fev  8 12:01 pasta2/
+drwxr-xr-x 1 nando 197610 0 fev  8 11:55 pasta3/
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/desktop/CTD/raiz
+$ chmod u+ x exemplo.sh
+chmod: cannot access 'x': No such file or directory
+chmod: cannot access 'exemplo.sh': No such file or directory
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/desktop/CTD/raiz
+$ chmod u+ x raiz.sh
+chmod: cannot access 'x': No such file or directory
+chmod: cannot access 'raiz.sh': No such file or directory
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/desktop/CTD/raiz
+$ chmod u+ x raiz
+chmod: cannot access 'x': No such file or directory
+chmod: cannot access 'raiz': No such file or directory
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/desktop/CTD/raiz
+$ cd pasta1
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/desktop/CTD/raiz/pasta1
+$ chmod u+ x rarquivo3.txt
+chmod: cannot access 'x': No such file or directory
+chmod: cannot access 'rarquivo3.txt': No such file or directory
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/desktop/CTD/raiz/pasta1
+$ chmod u+ x arquivo3.txt
+chmod: cannot access 'x': No such file or directory
+chmod: changing permissions of 'arquivo3.txt': Permission denied
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/desktop/CTD/raiz/pasta1
+$ rm arquivo3.txt
+rm: cannot remove 'arquivo3.txt': Permission denied
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/desktop/CTD/raiz/pasta1
+$ cd ../
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/desktop/CTD/raiz
+$ cd pasta3
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/desktop/CTD/raiz/pasta3
+$ touch criar1.txt
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/desktop/CTD/raiz/pasta3
+$ touch criar2.txt
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/desktop/CTD/raiz/pasta3
+$ touch criar3.txt
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/desktop/CTD/raiz/pasta3
+$ mv criar2.txt ../
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/desktop/CTD/raiz/pasta3
+$ cd ../
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/desktop/CTD/raiz
+$ mv criar.txt pasta2/
+mv: cannot stat 'criar.txt': No such file or directory
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/desktop/CTD/raiz
+$ mv criar3.txt pasta2/
+mv: cannot stat 'criar3.txt': No such file or directory
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/desktop/CTD/raiz
+$ mv criar2.txt pasta2/
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/desktop/CTD/raiz
+$ cd pasta3
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/desktop/CTD/raiz/pasta3
+$ rm criar3.txt
+rm: cannot remove 'criar3.txt': Permission denied
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/desktop/CTD/raiz/pasta3
+$ deletefile criar3.txt
+bash: deletefile: command not found
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/desktop/CTD/raiz/pasta3
+$ sudo rm criar3.txt
+bash: sudo: command not found
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/desktop/CTD/raiz/pasta3
+$ sudo rm -f nomearquivo
+bash: sudo: command not found
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/desktop/CTD/raiz/pasta3
+$ sudo rm -f criar3.txt
+bash: sudo: command not found
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/desktop/CTD/raiz/pasta3
+$ rm -f criar3.txt
+rm: cannot remove 'criar3.txt': Permission denied
+
+nando@DESKTOP-O0L3RQR MINGW64 ~/desktop/CTD/raiz/pasta3
+$

@@ -1,0 +1,45 @@
+ANOTAÇÕES BD: 23/02/2022
+
+PRIMARY KEY: chave primaria
+
+FOREIGN KEY: chave estrangeira
+(dentro da chave estrangeira você deve indicar o atributo da tabela em questão, que você usara para relacionar a outra tabela, depois é usado o termo:
+REFERENCES
+que é onde iremos colocar o nome da tabela(entidade), e o atributo ao qual você está se vinculando.
+
+se no INT NOT NULL PRIMARY KEY AUTO_INCREMENT você se esquecer de colocar o AUTO_INCREMENT, você só poderá adicioná-lo, caso ainda não tenha dados na tabela, do contrário, a mesma terá que ser apagada e refeita corretamente
+
+
+
+INSERT INTO entidade(atributo, atributo) VALUES (dado do atributo, dado do atributo
+(Comando utilizado para inserir dados em um banco de dados, especificando a entidade e o atributo onde quer adicionar o dado.
+
+Lembrando que caso o dado seja uma CHAR ou VARCHAR, o dado, que no caso será uma STRING, deve estar entre "" duplas.
+
+
+O comando SELECT (a principio), serve para selecionar os dados da tabela
+
+adicionando o " * " na frente, você seleciona todos os dados da tabela indicada:
+
+SELECT * FROM pacientes;
+
+SELECT nome, sobrenome FROM pacientes;
+(Neste caso, estamos selecionando os atributos que queremos retornar com o SELECT, ou seja, nesse caso, queremos apenas o atrinuto nome e sobrenome da tabela pacientes.
+
+
+O comando UPDATE serve para mudar (editar), um dado já inserido na tabela
+
+O comando DELETE serve para apagar (deletar), um dado já inserido em uma tabela
+
+
+O comando ALTER serve para alterar um "atributo, tabela", exemplo:
+
+ALTER TABLE "especifico qual entidade eu quero alterar" ADD "no caso, add é o comando que estou dando, ou seja, quero adicionar um atributo a entidade" telefone "atributo que será adicionado a entidade":
+
+ALTER TABLE pacientes ADD telefone VARCHAR(13); "É obrigatório colocar o tipo de dado que será adicionado a este atributo.
+
+No caso acima, ao visualizar os dados, a coluna que não tiver dados, aparecerá a palavra "NULL" informando que ela está vazia, sem dado algum, agora se eu alterar o comando, usando:
+
+ALTER TABLE pacientes ADD telefone VARCHAR(13) NOT NULL;
+
+a coluna irá aparecer em branco, pois para o VARCHAR, ele irá colocar um espaço em branco, que para ele é um dado.

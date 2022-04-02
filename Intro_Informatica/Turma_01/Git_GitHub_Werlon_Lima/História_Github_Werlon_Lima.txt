@@ -1,0 +1,12 @@
+*Ambientes de Desenvolvimento Colaborativo.*
+
+No mundo de desenvolvimento de softwares, é comum trabalhar em equipe. Seja qual for a metodologia de desenvolvimento empregada são raras as vezes em que não há um desenvolvimento colaborativo. Para um melhor gerenciamento do que é produzido, é necessário uma central de compartilhamento das informações, garantindo assim uma melhor comunicação e maior profissionalismo da equipe empregada. É ai que entram os sistemas de controle de versão, que exitem aos montes como por exemplo o Mercurial, o Git, o Bazaar etc. São eles os responsáveis por controlar as atualizações que o código sofre ao longo do desenvolvimento. Cada sistema necessita de um repositório web para abrigar o repositório local (que fica no próprio diretório do computador). o Git por exemplo, possui o GitHub e o GitLab que são serviços de Web Hosting que vão além da função primitiva deles de só abrigar código.
+
+*GITHUB - História*
+
+O GitHub foi lançado no ano de 2008 pelos desenvolvedores da Logical Awesome e é um sistema Web Hosting compartilhado. O GitHub nasceu com o principal objetivo de abrigar projetos que são versionados via Git. O GitHub foi escrito em Ruby on Rails, o que é bem interessante pelo fato de na época a linguagem/framework possuir pouco tempo de vida e estabilidade. A medida que a popularidade foi aumentando, percebeu-se que seria necessário a implementação de funcionalidades que deixassem o GitHub com cara de rede social. Foram adicionadas listas de discussões, gráficos referentes a contribuições em projetos e até mesmo a opção de seguir algum usuário, algo muito parecido com o que o Twitter emprega. Atualmente o GitHub é tão reconhecido na comunidade que projetos de grande importância estão desfrutam dos seus serviços, como por exemplo o Linux e o Ruby on Rails.
+
+*Referências:
+
+Wikipédia:
+https://pt.wikiversity.org/wiki/GitHub_x_GitLab
