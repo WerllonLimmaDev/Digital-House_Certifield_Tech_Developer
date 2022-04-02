@@ -1,0 +1,69 @@
+CREATE DATABASE UniversoLeitura;
+
+
+CREATE TABLE usuario (
+idUsuario INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+nomeusuario VARCHAR(AS)
+data_nac DATE
+sexo VARCHAR(I)
+email VARCHAR(150)
+senha VARCHAR(AS)
+
+);
+
+CREATE TABLE TELEFONES (
+telefone_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+telefone_socio VARCHAR(100),
+codAssoc INT,
+FOREIGN KEY(codAssoc) REFERENCES ASSOCIADOS(associados_id)
+
+);
+
+CREATE TABLE AUTORES (
+autores_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+sobrenome VARCHAR(100),
+nome VARCHAR(100)
+);
+
+
+CREATE TABLE EDITORAS (
+editora_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+razao_social VARCHAR(150),
+telefone VARCHAR(100)
+);
+
+CREATE TABLE LIVROS (
+livros_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+cod_ISBN VARCHAR(13),
+titulo VARCHAR(200),
+ano_criacao DATE
+ano_publicacao DATE
+FOREIGN KEY(livros_id) REFERENCES AUTORES(autores_id)
+FOREIGN KEY(livros_id) REFERENCES EDITORAS(editora_id)
+
+);
+
+CREATE TABLE EXEMPLARES (
+exemplares_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+cod_livros
+);
+
+CREATE TABLE EMPRESTIMO_EXEMPLARES (
+ INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+nome VARCHAR(50),
+sobrenome VARCHAR(100),
+ INT,
+FOREIGN KEY(medico_especialidade) REFERENCES especialidades(especialidade_id)
+
+
+);
+
+CREATE TABLE EMPRESTIMOS (
+ INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+ DATE,
+hora_consulta TIME,
+paciente_id INT,
+medico_id INT,
+FOREIGN KEY(paciente_id) REFERENCES pacientes(paciente_id),
+FOREIGN KEY(medico_id) REFERENCES medicos(medico_id)
+);

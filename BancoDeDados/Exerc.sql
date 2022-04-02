@@ -1,0 +1,34 @@
+CREATE DATABASE DHTUBE;
+USE DHTUBE;
+
+CREATE TABLE pais (
+	idPais INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	nome VARCHAR(100)
+);
+
+CREATE TABLE avatar (
+idAvatar INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+nome VARCHAR(100),
+url_imagem VARCHAR(45)
+);
+
+CREATE TABLE usuario (
+idUsario INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+nome VARCHAR(45),
+email VARCHAR(45),
+senha VARCHAR(45),
+dataNascimento DATETIME,
+cep VARCHAR(45),
+idPais_FK INT,
+idAvatar_FK INT,
+FOREIGN KEY(idPais_FK) REFERENCES pais(idPais),
+FOREIGN KEY(idAvatar_FK) REFERENCES avatar(idAvatar)
+);
+
+CREATE TABLE canal (
+idCanal INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+nome VARCHAR(45),
+descricao TEXT,
+idUsuario_FK INT,
+FOREIGN KEY(idUsuario_FK) REFERENCES usuario(idUsario)
+);
