@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing" xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+  <s:Header>
+    <a:Action s:mustUnderstand="1">http://www.microsoft.com/SoftwareDistribution/Server/ClientWebService/GetExtendedUpdateInfo2Response</a:Action>
+    <a:RelatesTo>urn:uuid:a68d4c75-ab85-4ca8-87db-136d281a2e28</a:RelatesTo>
+    <o:Security s:mustUnderstand="1" xmlns:o="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+      <u:Timestamp u:Id="_0">
+        <u:Created>2022-04-11T19:40:07.328Z</u:Created>
+        <u:Expires>2022-04-11T19:45:07.328Z</u:Expires>
+      </u:Timestamp>
+    </o:Security>
+  </s:Header>
+  <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <GetExtendedUpdateInfo2Response xmlns="http://www.microsoft.com/SoftwareDistribution/Server/ClientWebService">
+      <GetExtendedUpdateInfo2Result>
+        <FileLocations>
+          <FileLocation>
+            <FileDigest>+cYkEoAPlyYHCz9yndcR3Dw/oMo=</FileDigest>
+            <Url>http://tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/0a6f8c0c-d789-43ea-b5d3-1b5444e79032?P1=1649721087&amp;P2=404&amp;P3=2&amp;P4=hND2wAw%2fwtaiJglrhybr%2bxNjbRdrvr%2fZ7IWdL2ioJPLekM0mO8YeB1ht0HzOqopHKk1B%2fDseR6l6AxWS1iamgA%3d%3d</Url>
+          </FileLocation>
+          <FileLocation>
+            <FileDigest>ZDQnJTdW3Oo+hmvAW4wg6wFP41c=</FileDigest>
+            <Url>http://dl.delivery.mp.microsoft.com/filestreamingservice/files/85c10e71-2dc4-4e97-9027-41e3a100383a</Url>
+          </FileLocation>
+        </FileLocations>
+      </GetExtendedUpdateInfo2Result>
+    </GetExtendedUpdateInfo2Response>
+  </s:Body>
+</s:Envelope>

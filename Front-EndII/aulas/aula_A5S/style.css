@@ -1,0 +1,13 @@
+body {
+    background-color: aquamarine;
+}
+
+.dark-mode {
+    background-color: black;
+}
+
+.dark-mode h1 {
+
+    color: white;
+
+}
