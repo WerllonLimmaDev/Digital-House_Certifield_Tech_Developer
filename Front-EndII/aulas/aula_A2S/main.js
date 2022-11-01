@@ -74,6 +74,9 @@ function opcaoJogada() {
     alert('Opção inválida, tente novamente')
     novoJogo()
   }
+  /*if (escolhaUsuario <= 2 || escolhaScript <= 2) {
+    alert(`Você perdeu a batalha!`)
+  }*/
 }
 
 function jogarNovamente() {
@@ -82,82 +85,10 @@ function jogarNovamente() {
   deNovo ? novoJogo(): '' 
 }
 
+
 novoJogo()
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* var escolhaUsuario
-var escolhaAleatoria = Math.floor(Math.random() * 3) + 1;
-
-function jogada() {
-
-    escolhaUsuario = Number(prompt('Escolha sua opção: [1] Pedra, [2]) Papel, [3] Tesoura'))
-    escolhaAleatoria
-
-
-    if (escolhaAleatoria > escolhaUsuario) {
-    
-        console.log('Você Perdeu!')
-    
-    } else {
-    
-        if(escolhaAleatoria === escolhaUsuario) {
-    
-            console.log('Deu empate!')
-    
-        } else {
-    
-            console.log('Você Ganhou!')
-    
-        }
-    
-    }
-    
-}
-
-jogada() */
-
-
-
-
-
-
-// Permitir jogar novamente. Dica(usar funções)
-// Armazenar os pontos e se um dos jogadores chegar a 3 pontos, o jogo acaba e pergunta se deseja jogar novamente.

@@ -1,0 +1,30 @@
+Realizado todos os procedimentos proposto na atividade:
+
+>> sudo apt update              OK
+>> sudo apt upgrade -y          OK
+>> sudo systemctl apache2       OK
+ 
+ { Mensagem informada conforme 
+previsto => "Aqui vai sair 
+uma resposta do tipo: Unknown 
+operation apache2,
+avisando que o apache 
+não é conhecido." }
+
+>> sudo apt install apache2 -y  OK
+ 
+ {Obs: "Foi pedido no execício 
+nessa parte para aplicaro 
+comando git clone, porém 
+precisei 1° instalar o git com 
+o comando: 
+>> sudo apt install git -y"}
+
+>> sudo apt install git -y      OK
+>> sudo git clone https://github.com/nidiodolfini/aula21  OK
+
+>> sudo chmod 777 -R aula21/    OK
+>> sudo cp -rf aula21/* /var/www/html/                    OK
+
+"Por último acessei pelo navegador o arquivo ToDo
+conforme mostra a imagem anexada".
